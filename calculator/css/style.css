@@ -1,0 +1,162 @@
+body{
+    display: flex;
+    justify-content: center
+}
+
+.main{
+
+  
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(rgb(39, 40, 139) 0%, #0918f0 100%) ;
+    border: 4px solid black; 
+    width: 400px;
+    height: 660px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 4px rgb(20, 15, 15);
+    box-shadow: 0 7px 10px rgba(0, 0,0, .8);
+}
+.header{
+    width: auto;
+    /* background-color: #040425; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.affiche {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #bccd95;
+    height: 150px;
+    border-radius: 10px;
+    border-bottom: 1px solid #777;
+    box-shadow: inset 0 0 10px 4px rgba(0, 0,0, .6)
+}
+button{
+    width: 60px;
+    height: 45px;
+    color: white;
+    cursor: default;
+    text-align: center;
+    padding: 7px 12px;
+    font-size: 20px;
+    text-shadow: 0 -1 1px #000;
+    font-weight: bold;
+    border-top: 1px solid #777;
+    background: linear-gradient(#5F5F5F 0%, #404040 100%) ;
+    box-shadow: 0 2px 6px rgba(0, 0,0, .8);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+button:hover{
+    background: linear-gradient(#79D144 0%, #50A61F 100%);
+    border-top: 1px solid #9ADD73;
+    text-shadow: 0 -1px 1px #008000;
+}
+button:active{
+    box-shadow: 0px;
+    
+}
+
+.input1,.input2{
+    background-color: #bccd95;
+    height: 69px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fuction{
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    width: 390px;
+    height: 100px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    box-shadow:  inset 0 7px 10px rgba(0, 0,0, .8);
+}
+
+.classic-touch{
+    box-shadow: inset 0 7px 10px rgba(0, 0,0, .8);
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 390px;
+    height: 230px;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-around;
+}
+.number{
+    align-items: center;
+    width:205px ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.symbol {
+    align-items: center;
+    width:165px ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.symbol button{
+    
+    color: white;
+    padding: 5px
+}
+.egale{
+    background:  linear-gradient(rgb(155, 54, 54) 0%, #d40505 100%)
+}
+.secondf{
+    background:  linear-gradient(rgb(51, 49, 153) 0%, #070be4 100%)
+}
+.point{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: red;
+}
+.logo-affich{
+    width: 150px;
+    background-color: rgb(39, 40, 139);
+}
+.logo{
+    width:60px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    justify-items: center;
+    background-image: url('../img/nan.jpg');
+    background-size: cover;
+}
+.etat{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 150px;
+    
+}
+.kevin{
+    /* width: 150px; */
+    font-size: 20px;
+    font-weight: bold;
+}
+.etat input{
+    background-color: #008000;
+    font-weight: bold;
+    height: 25px;
+    width: 40px;
+
+}
+
