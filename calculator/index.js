@@ -67,8 +67,8 @@ const secondf= (symb)=>{
     let ln=document.querySelector(".ln")
     let log=document.querySelector(".log")
     if (symb==="/") {  
-        boutton.innerText="%" 
-        ln.innerText="int"
+        boutton.innerHTML="&#x25;" 
+        ln.innerHTML="&int;"
         log.innerText='Pi'       
         boutton.setAttribute("onclick","calcule('%')")
         divi.setAttribute("onclick","secondf('%')") 
