@@ -35,6 +35,18 @@ const aqual= ()=>{
             let sinus= exp.replace("abs","Math.abs")
             document.querySelector('.input1').value=eval(sinus)
 
+        }else if (exp.includes("log")) {
+            let sinus= exp.replace("log","Math.log10")
+            document.querySelector('.input1').value=eval(sinus)
+
+        } else if (exp.includes("ln")) {
+            let sinus= exp.replace("ln","Math.log")
+            document.querySelector('.input1').value=eval(sinus)
+
+        }  else if (exp.includes("pi")) {
+            let sinus= exp.replace("pi","Math.PI")
+            document.querySelector('.input1').value=eval(sinus)
+
         } else{
             document.querySelector('.input1').value=eval(exp)
         }
@@ -52,28 +64,44 @@ const remove= ()=>{
 const secondf= (symb)=>{
     let divi=document.querySelector('.secondf')
     let boutton= document.querySelector('.division')
+    let ln=document.querySelector(".ln")
+    let log=document.querySelector(".log")
     if (symb==="/") {  
-        boutton.innerText="%"     
+        boutton.innerText="%" 
+        ln.innerText="int"
+        log.innerText='Pi'       
         boutton.setAttribute("onclick","calcule('%')")
-        divi.setAttribute("onclick","secondf('%')")   
+        divi.setAttribute("onclick","secondf('%')") 
+        ln.setAttribute("onclick","calcule('int')")
+        log.setAttribute('onclick','calcule("pi")')  
         console.log()
     }else{
         boutton.innerText="/"
         boutton.setAttribute("onclick","calcule('/')")
         divi.setAttribute("onclick","secondf('/')") 
+        ln.setAttribute('onclick','calcule("ln")')
+        log.setAttribute('onclick','calcule("log")')
+        ln.innerText="Ln"
+        log.innerText='Log'
     }
 }
+Math.PI
 const power= (symb)=>{
-    let divi=document.querySelector('.secondf')
-    let boutton= document.querySelector('.division')
-    if (symb==="/") {  
-        boutton.innerText="%"     
-        boutton.setAttribute("onclick","calcule('%')")
-        divi.setAttribute("onclick","secondf('%')")   
-        console.log()
+    let on=document.querySelector('.On')
+    let etat=document.querySelector('.etat1')
+    if (symb==="on") {  
+       
+       etat.style.backgroundColor="red"
+        on.style.background="linear-gradient(rgb(226, 40, 40) 0%, #5f0202 100%)"    
+        on.innerText='Off'
+        etat.value='Off'
+        on.setAttribute("onclick","power('Off')") 
     }else{
-        boutton.innerText="/"
-        boutton.setAttribute("onclick","calcule('/')")
-        divi.setAttribute("onclick","secondf('/')") 
+      
+        etat.style.backgroundColor="rgb(40, 250, 2)"
+        etat.value='On'
+        on.innerText="On"
+        on.style.background="linear-gradient(rgb(90, 170, 70) 0%, #33f801 100%)"
+        on.setAttribute("onclick","power('on')") 
     }
 }
