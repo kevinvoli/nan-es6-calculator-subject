@@ -30,3 +30,8 @@ i think that if you want to do javascript, you know html and css too so, i don't
 
 GOOD LUCK !
 ### *Coder ? NaaaaaaaN c'est pas sorcier !*
+
+
+## result
+
+![screen shot](https://github.com/kevinvoli/nan-es6-calculator-subject/edit/master/calculator/img/Screen.png)
